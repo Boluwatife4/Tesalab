@@ -1,0 +1,6 @@
+﻿from flask import Flask
+app = Flask(__name__)
+
+@app.get("/")
+def hello():
+    return "Deployed via GitHub Actions to my EC2 server!"
